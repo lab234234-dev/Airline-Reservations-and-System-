@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SkyHigh Air - Member 3 Personal Presentation & Viva Guide</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.6;
+      color: #1e293b;
+      background: #fffbeb;
+      margin: 0;
+      padding: 30px;
+    }
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 45px 55px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      border-top: 6px solid #d97706;
+    }
+    .title-banner {
+      text-align: center;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 25px;
+      margin-bottom: 30px;
+    }
+    h1 {
+      color: #78350f;
+      margin-bottom: 8px;
+      font-size: 22pt;
+    }
+    .subtitle {
+      color: #d97706;
+      font-weight: 600;
+      font-size: 13pt;
+    }
+    h2 {
+      color: #92400e;
+      border-left: 5px solid #d97706;
+      padding-left: 12px;
+      margin-top: 35px;
+      font-size: 15pt;
+    }
+    .dialogue-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 4px solid #d97706;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 15px 0;
+      font-size: 10.5pt;
+    }
+    .speech-text {
+      background: #ffffff;
+      border: 1px dashed #cbd5e1;
+      padding: 14px;
+      border-radius: 6px;
+      margin-top: 8px;
+      font-style: italic;
+      color: #0f172a;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+      font-size: 10pt;
+    }
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 10px 12px;
+      text-align: left;
+    }
+    th {
+      background: #fffbeb;
+      color: #92400e;
+      font-weight: bold;
+    }
+    .print-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #d97706;
+      color: white;
+      border: none;
+      padding: 12px 22px;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(217, 119, 6, 0.4);
+      z-index: 1000;
+    }
+    @media print {
+      body { background: white; padding: 0; }
+      .wrapper { box-shadow: none; padding: 0; max-width: 100%; }
+      .print-btn { display: none; }
+      h2 { page-break-before: always; }
+    }
+  </style>
+</head>
+<body>
+  <button class="print-btn" onclick="window.print()">🖨️ Print / Save PDF</button>
+
+  <div class="wrapper">
+    <div class="title-banner">
+      <h1>MEMBER 3: DATABASE & OPERATIONS SPECIALIST GUIDE</h1>
+      <div class="subtitle">Complete Presentation Script, Technical Knowledge & Viva Defense</div>
+      <p style="color: #64748b; margin: 4px 0 0;">SkyHigh Air – Major Project (Academic Year 2026 - 2027)</p>
+    </div>
+
+    <h2>📌 1. તારી ભૂમિકા શું છે? (Your Role in this Project)</h2>
+    <p>કોલેજમાં સર પૂછે કે <em>"તમે આ પ્રોજેક્ટમાં શું યોગદાન આપ્યું છે?"</em>, ત્યારે તમારે આ મુદ્દાઓ જણાવવાના છે:</p>
+    <table>
+      <tr>
+        <th>તમારું મોડ્યુલ</th>
+        <th>મુખ્ય ટેકનોલોજી</th>
+        <th>તમે શું કામ કર્યું છે?</th>
+      </tr>
+      <tr>
+        <td><strong>MongoDB Atlas Cloud Database</strong></td>
+        <td>MongoDB Atlas, Mongoose ODM</td>
+        <td>ક્લાઉડ ડેટાબેઝ ક્લસ્ટર તૈયાર કર્યું અને 4 મુખ્ય કલેક્શન્સ (Users, Flights, Bookings, CounterBookings) નું સ્કીમા ડિઝાઇન કર્યું.</td>
+      </tr>
+      <tr>
+        <td><strong>Web Check-in & Boarding Pass</strong></td>
+        <td>HTML5 Canvas, QR Code Engine</td>
+        <td>PNR દ્વારા વેબ ચેક-ઇન, સીટ કન્ફર્મેશન અને સ્કેનેબલ QR કોડ વાળો ડીજીટલ બોર્ડિંગ પાસ જનરેશન.</td>
+      </tr>
+      <tr>
+        <td><strong>Airport Counter Ticketing Desk</strong></td>
+        <td>Angular & Node Controller</td>
+        <td>એરપોર્ટ પર આવતા પેસેન્જરો માટે ગ્રાઉન્ડ સ્ટાફ કાઉન્ટર પરથી જ સ્પોટ ટિકિટ ઇસ્યુ કરી શકે તેવો ડેસ્ક (/counter-booking).</td>
+      </tr>
+      <tr>
+        <td><strong>Admin Visual Analytics Dashboard</strong></td>
+        <td>Chart.js / CSS Analytics</td>
+        <td>એરલાઇન એડમિન માટે ટોટલ રેવન્યુ, એક્ટિવ ફ્લાઇટ્સ અને સીટ લોડ-ફેક્ટરના વિઝ્યુઅલ રિપોર્ટ્સ.</td>
+      </tr>
+      <tr>
+        <td><strong>Testing & Verification</strong></td>
+        <td>Postman & UI Testing</td>
+        <td>બધા API એન્ડપોઇન્ટ્સનું ટેસ્ટિંગ અને સિસ્ટમ વેરીફિકેશન ડોક્યુમેન્ટેશન.</td>
+      </tr>
+    </table>
+
+    <h2>🎤 2. ક્લાસરૂમમાં પ્રેઝન્ટેશન વખતે તારે શું બોલવું? (Exact English Speaking Script)</h2>
+    <div class="dialogue-card">
+      <strong>જ્યારે Member 2 તને માઇક / વારો આપે ત્યારે બોલવું:</strong>
+      <div class="speech-text">
+        "Thank you, [Member 2 Name]. Respected Sir, my name is [Member 3 Name].<br><br>
+        I was responsible for <strong>MongoDB Atlas Database Engineering, the Web Check-in & Boarding Pass Generation engine, the Airport Counter Desk, and Admin Analytics</strong>.<br><br>
+        <strong>1. Database Architecture:</strong> We selected MongoDB Atlas as our cloud database engine. Because different aircraft types (like Boeing 787 vs Airbus A320) have completely distinct seat layouts and passenger manifests, MongoDB's flexible, non-relational document model allows us to store nested seat arrays and fast transactional records without complicated multi-table SQL JOINs.<br><br>
+        <strong>2. Web Check-in & Dynamic Boarding Pass:</strong> Once a passenger has booked a ticket, they can perform Web Check-in via our portal by providing their PNR. Our system retrieves their reservation, updates the check-in status flag to 'true', and generates an official SkyHigh Air Boarding Pass. As you can see on screen, it features a real-time flight tracking indicator and a client-side rendered, scannable QR Code that encodes passenger credentials for gate security validation.<br><br>
+        <strong>3. Airport Counter Ticketing Desk:</strong> To mirror real-world airport operations, we designed an Airport Counter Desk at <code>/counter-booking</code>. This allows airport desk agents to rapidly issue physical tickets to walk-in passengers with immediate PNR allocation.<br><br>
+        <strong>4. Admin Fleet Analytics:</strong> Logging into <code>/admin</code> reveals our executive dashboard displaying real-time operational metrics: total system revenue, seat load factors, active domestic and international flights, and complete CRUD management over airline schedules.<br><br>
+        I now hand back to our team lead, [Member 1 Name], to conclude our presentation. Thank you, Sir."
+      </div>
+    </div>
+
+    <h2>🧠 3. સર તને પૂછી શકે તેવા ટોપ ૫ ટેકનિકલ પ્રશ્નો (Viva Questions & Answers)</h2>
+    
+    <p><strong>Q1: SQL (MySQL) કરતા MongoDB શા માટે એરલાઇન પ્રોજેક્ટ માટે વધુ સારું છે?</strong><br>
+    <em>જવાબ:</em> એરલાઇન ડેટાબેઝમાં દરેક પ્લેનની સીટિંગ રચના (Seat Matrix) અલગ હોય છે અને પેસેન્જર લિસ્ટ નેસ્ટેડ હોય છે. MySQL માં આ માટે ૪-૫ ટેબલ્સ બનાવીને JOINs કરવા પડે છે જે સ્લો થાય છે. MongoDB માં આખો સીટ મેટ્રિક્સ એક જ Document માં JSON એરે સ્વરૂપે ખૂબ ઝડપથી સેવ અને અપડેટ થઈ શકે છે.</p>
+
+    <p><strong>Q2: Boarding Pass પરનો QR Code કેવી રીતે કામ કરે છે?</strong><br>
+    <em>જવાબ:</em> QR કોડ ક્લાયન્ટ સાઇડ Canvas લાઇબ્રેરી દ્વારા ડાયનેમિકલી જનરેટ થાય છે. તેમાં PNR, પેસેન્જરનું નામ, ફ્લાઇટ નંબર, સીટ નંબર અને સિક્યોરિટી ટોકન એન્કોડ હોય છે, જેને એરપોર્ટ ગેટ પર સ્કેનર દ્વારા સીધું વેરિફાય કરી શકાય છે.</p>
+
+    <p><strong>Q3: Web Check-in થયા વગર પેસેન્જર પ્લેનમાં બેસી શકે?</strong><br>
+    <em>જવાબ:</em> ના. એરલાઇન નિયમો મુજબ બુકિંગ માત્ર સીટ રિઝર્વ કરે છે. જ્યાં સુધી પેસેન્જર વેબ ચેક-ઇન કરીને બોર્ડિંગ પાસ જનરેટ ન કરે ત્યાં સુધી ડેટાબેઝમાં <code>checkInStatus: false</code> રહે છે. ચેક-ઇન થતાં જ તે <code>true</code> બને છે અને સીટ કન્ફર્મ થાય છે.</p>
+
+    <p><strong>Q4: એરપોર્ટ કાઉન્ટર ડેસ્ક શા માટે બનાવ્યો?</strong><br>
+    <em>જવાબ:</em> રિયલ-વર્લ્ડ એરપોર્ટ પર ઘણા પેસેન્જરો સીધા એરપોર્ટ પહોંચીને કાઉન્ટર પરથી સ્પોટ ટિકિટ લેતા હોય છે. આ મોડ્યુલ એરપોર્ટ ગ્રાઉન્ડ સ્ટાફને ઝડપથી ટિકિટ ઇસ્યુ કરવાની સુવિધા આપે છે.</p>
+
+    <p><strong>Q5: એડમિન એનાલિટિક્સમાં કયા મેટ્રિક્સ બતાવો છો?</strong><br>
+    <em>જવાબ:</em> ટોટલ રેવન્યુ (રૂપિયામાં), ટોટલ બુકિંગ્સ, એક્ટિવ ફ્લાઇટ્સની સંખ્યા, ડોમેસ્ટિક vs ઇન્ટરનેશનલ ફ્લાઇટ્સનો રેશિયો અને સીટ ઓક્યુપન્સી (Load Factor).</p>
+  </div>
+</body>
+</html>

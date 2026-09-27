@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SkyHigh Air - Team Role Division & Master Presentation Script</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.6;
+      color: #1e293b;
+      background: #f1f5f9;
+      margin: 0;
+      padding: 30px;
+    }
+    .wrapper {
+      max-width: 950px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 45px 55px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+    .title-banner {
+      text-align: center;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 25px;
+      margin-bottom: 30px;
+    }
+    h1 {
+      color: #0f172a;
+      margin-bottom: 8px;
+      font-size: 24pt;
+    }
+    .subtitle {
+      color: #0284c7;
+      font-weight: 600;
+      font-size: 13pt;
+    }
+    .badge-bar {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    .badge {
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 9.5pt;
+      font-weight: 600;
+    }
+    h2 {
+      color: #1e3a8a;
+      border-left: 5px solid #0284c7;
+      padding-left: 12px;
+      margin-top: 35px;
+      font-size: 15pt;
+    }
+    h3 {
+      color: #0f172a;
+      font-size: 12.5pt;
+      margin-top: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      font-size: 10pt;
+    }
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 10px 12px;
+      text-align: left;
+    }
+    th {
+      background: #f8fafc;
+      color: #0f172a;
+      font-weight: 600;
+    }
+    .speaker-box {
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin: 18px 0;
+      border-left: 6px solid #0284c7;
+      background: #f8fafc;
+    }
+    .member-tag {
+      font-weight: 700;
+      font-size: 11pt;
+      margin-bottom: 6px;
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 6px;
+    }
+    .m1-tag { background: #dbeafe; color: #1e40af; }
+    .m2-tag { background: #dcfce7; color: #166534; }
+    .m3-tag { background: #fef3c7; color: #92400e; }
+    .dialogue {
+      font-style: italic;
+      color: #0f172a;
+      background: #ffffff;
+      padding: 12px 16px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      margin-top: 8px;
+      display: block;
+    }
+    .notes {
+      font-size: 9.5pt;
+      color: #475569;
+      margin-top: 6px;
+    }
+    .print-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #0284c7;
+      color: white;
+      border: none;
+      padding: 12px 22px;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(2, 132, 199, 0.4);
+      z-index: 1000;
+    }
+    @media print {
+      body { background: white; padding: 0; }
+      .wrapper { box-shadow: none; padding: 0; max-width: 100%; }
+      .print-btn { display: none; }
+      h2 { page-break-before: always; }
+    }
+  </style>
+</head>
+<body>
+  <button class="print-btn" onclick="window.print()">🖨️ Print / Save PDF</button>
+
+  <div class="wrapper">
+    <div class="title-banner">
+      <h1>SKYHIGH AIR RESERVATION SYSTEM</h1>
+      <div class="subtitle">Master Group Presentation Script & Role Division Dossier (3 Members)</div>
+      <p style="color: #64748b; margin: 4px 0 0;">Designed for College Major Project Defense, Evaluation & Viva Voce</p>
+      <div class="badge-bar">
+        <span class="badge">Team of 3</span>
+        <span class="badge">12-Minute Master Flow</span>
+        <span class="badge">MEAN Stack</span>
+        <span class="badge">Live Demonstration</span>
+      </div>
+    </div>
+
+    <h2>👥 1. Clear Role Division (કયા મેમ્બરે પ્રોજેક્ટમાં શું કામ કર્યું?)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Member</th>
+          <th>Student Name</th>
+          <th>Key Responsibility & Modules Handled</th>
+          <th>Technologies Used</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="member-tag m1-tag">Member 1 (You - Team Lead)</span></td>
+          <td>[Student Name 1]</td>
+          <td>
+            <strong>Frontend Architecture, UI & Flight Systems:</strong><br>
+            • Overall Project Architecture, System Flow & Integration.<br>
+            • Angular 17/18 Standalone App Structure & Routing.<br>
+            • Home Page, Live Flight Scheduler (1-minute live auto-refresh).<br>
+            • Interactive Cabin Seating Matrix (Available, Booked, Held, Premium).<br>
+            • Leaflet.js Interactive Flight Route Map (India & International zoom).<br>
+            • Glassmorphism Design System & Viewport Backgrounds.
+          </td>
+          <td>Angular 18, TypeScript, RxJS, Leaflet.js, CSS3 Glassmorphism</td>
+        </tr>
+        <tr>
+          <td><span class="member-tag m2-tag">Member 2</span></td>
+          <td>[Student Name 2]</td>
+          <td>
+            <strong>Backend REST API, Security & Payments:</strong><br>
+            • Node.js & Express.js REST API Server (Port 5000).<br>
+            • Authentication Controller (Register, Login, JWT Tokens, bcryptjs).<br>
+            • Security Middleware (JWT verification, Express Rate Limiter, CORS).<br>
+            • Multi-Channel Payment Simulation (Razorpay Sandbox, UPI, Cards, SkyMiles).<br>
+            • Currency Exchange Engine (INR, USD, EUR, GBP, AED, JPY).
+          </td>
+          <td>Node.js, Express.js, JWT, bcryptjs, Razorpay SDK, REST APIs</td>
+        </tr>
+        <tr>
+          <td><span class="member-tag m3-tag">Member 3</span></td>
+          <td>[Student Name 3]</td>
+          <td>
+            <strong>Database Engineering, Check-in, Boarding Pass & Testing:</strong><br>
+            • MongoDB Atlas Cloud Database Design & Indexing.<br>
+            • Mongoose Schemas (User, Flight, Booking, CounterBooking).<br>
+            • Web Check-In Module & Boarding Pass with Scannable QR Code.<br>
+            • Airport Physical Counter Desk Booking System (/counter-booking).<br>
+            • Admin Analytics Dashboard (Revenue charts, Load factor, Fleet CRUD).<br>
+            • Software Quality Testing, API Verification & Documentation.
+          </td>
+          <td>MongoDB Atlas, Mongoose, HTML5 Canvas QR, Testing, Admin Charts</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>⏱️ 2. Classroom Presentation Timeline (12 Minutes Total)</h2>
+    <ul>
+      <li><strong>00:00 – 03:30 (3.5 mins):</strong> Member 1 (Project Overview, Problem Statement, Architecture & Flight Search with Map)</li>
+      <li><strong>03:30 – 07:00 (3.5 mins):</strong> Member 2 (Backend REST APIs, Security, Seat Concurrency & Multi-Channel Payments)</li>
+      <li><strong>07:00 – 10:30 (3.5 mins):</strong> Member 3 (Web Check-In, Boarding Pass with QR, Airport Counter Desk & Admin Analytics)</li>
+      <li><strong>10:30 – 12:00 (1.5 mins):</strong> Member 1 (Conclusion, Future Scope & Team Q&A Handling)</li>
+    </ul>
+
+    <h2>🎙️ 3. Exact Minute-by-Minute Presentation Script (શું બોલવું?)</h2>
+
+    <div class="speaker-box">
+      <span class="member-tag m1-tag">Part 1: Member 1 (Team Lead - Opening & Frontend Demo)</span>
+      <div class="notes"><strong>ગુજરાતી માર્ગદર્શન:</strong> પ્રોજેક્ટની શરૂઆત તમે કરશો. ગ્રીટિંગ આપીને પ્રોજેક્ટ શા માટે બનાવ્યો અને આર્કિટેક્ચર શું છે તે સમજાવીને હોમ પેજ અને ફ્લાઇટ મેપ બતાવશો.</div>
+      <div class="dialogue">
+        "Respected Guide Sir, Head of Department, and External Examiner, a very good morning to all of you. My name is [Your Name], and I am the Team Lead for our Major Project titled: 'SkyHigh Air – Enterprise Airline Reservation & Fleet Intelligence System'. Along with my team members [Member 2 Name] and [Member 3 Name], we have engineered a full-stack commercial airline platform using the modern MEAN Stack (MongoDB Atlas, Express.js, Angular 18 Standalone, and Node.js).<br><br>
+        Traditional airline reservation projects in colleges are mostly static, with simple HTML forms and fixed database records. In contrast, SkyHigh Air simulates real-world commercial airline operations adhering to IATA standards. It features dynamic 1-minute live flight generation, interactive cabin seat matrices, Leaflet.js flight route mapping, web check-in with dynamic boarding passes, physical airport counter booking, and an executive administration dashboard.<br><br>
+        Let me demonstrate the live user portal on http://localhost:4200. As you can see, the homepage welcomes passengers with an authentic airline atmosphere. We feature a multi-currency switcher supporting INR, US Dollars, Euros, and Arab Dirhams. If we navigate to 'Available Flights', our system automatically queries active flights. Clicking on '🗺️ View Live Route Map' renders an interactive vector map using Leaflet.js, plotting real geodesic flight paths between Indian states and international hubs. Now, I hand over to [Member 2 Name] to explain the backend architecture, security, and payment workflows."
+      </div>
+    </div>
+
+    <div class="speaker-box">
+      <span class="member-tag m2-tag">Part 2: Member 2 (Backend REST API & Payment Gateway)</span>
+      <div class="notes"><strong>ગુજરાતી માર્ગદર્શન:</strong> મેમ્બર ૨ બેકએન્ડ, API રાઉટ્સ, JWT ઓથેન્ટિકેશન, સીટ કોન્કરન્સી અને પેમેન્ટ મોડ્યુલ સમજાવશે.</div>
+      <div class="dialogue">
+        "Thank you, [Member 1 Name]. Good morning Sir. I am [Member 2 Name], and I handled the Backend Architecture, Security, and Payment Gateway integration.<br><br>
+        Our backend runs on Node.js and Express.js on port 5000, connected to a MongoDB Atlas cloud cluster. We developed robust RESTful APIs structured into Controllers, Routes, and Middleware. For authentication, passwords are encrypted with bcryptjs using 10 salt rounds. Sessions are verified using JSON Web Tokens (JWT) with HTTP-only cookies, protecting against Cross-Site Scripting (XSS). We also implemented Express Rate Limiting to prevent brute-force attacks.<br><br>
+        One critical engineering challenge in airlines is Seat Concurrency: ensuring two passengers cannot book the exact same seat at the same time. When a passenger clicks on an available seat (⬜), our API places a temporary lock, marking it as Held (🟨). During checkout, an atomic database transaction verifies seat availability before marking it as Booked (🟥).<br><br>
+        For payments, we simulated a multi-channel checkout incorporating Credit/Debit cards with a 3D visual preview, UPI QR codes, Net Banking, and our proprietary SkyMiles Loyalty program, where passengers earn 10% points on every flight. Once payment succeeds, an atomic 6-character PNR is generated. Now, [Member 3 Name] will demonstrate Web Check-in, Boarding Pass QR, and Admin Analytics."
+      </div>
+    </div>
+
+    <div class="speaker-box">
+      <span class="member-tag m3-tag">Part 3: Member 3 (Database, Boarding Pass & Airport Desk)</span>
+      <div class="notes"><strong>ગુજરાતી માર્ગદર્શન:</strong> મેમ્બર ૩ ડેટાબેઝ મોડેલ્સ, વેબ ચેક-ઇન, બોર્ડિંગ પાસ QR કોડ, એરપોર્ટ કાઉન્ટર ડેસ્ક અને એડમિન પેનલ સમજાવશે.</div>
+      <div class="dialogue">
+        "Thank you, [Member 2 Name]. Respected Sir, my name is [Member 3 Name], and I was responsible for MongoDB Database Engineering, Web Check-in with Boarding Pass generation, Airport Counter Ticketing, and System Testing.<br><br>
+        We designed four core collections in MongoDB Atlas: Users, Flights, Bookings, and CounterBookings. MongoDB's document model was chosen because flight seat layouts and passenger rosters are polymorphic and vary across airframe models like Airbus A320 and Boeing 787, which relational tables struggle to represent efficiently.<br><br>
+        Let me demonstrate Web Check-in. When a passenger enters their PNR, our system verifies their booking. Upon clicking 'Confirm Check-in', the system generates an official SkyHigh Air Boarding Pass. Notice the live flight progress tracker indicating active flight status, along with an encrypted, scannable QR Code that contains the passenger manifest for gate scanners.<br><br>
+        Additionally, we built an Airport Counter Desk at '/counter-booking' for airport ground staff to quickly issue tickets to walk-in passengers. Finally, logging into our Admin Portal at '/admin' reveals live fleet analytics, total revenue generated, seat load factors, and flight CRUD management controls. I now hand back to our team lead to conclude."
+      </div>
+    </div>
+
+    <div class="speaker-box">
+      <span class="member-tag m1-tag">Part 4: Member 1 (Conclusion & Q&A Open)</span>
+      <div class="notes"><strong>ગુજરાતી માર્ગદર્શન:</strong> તમે પ્રોજેક્ટનું સુંદર કન્ક્લુઝન કરશો અને સરને પૂછશો કે "Sir, we are now ready for your questions."</div>
+      <div class="dialogue">
+        "To conclude, SkyHigh Air satisfies all requirements of an enterprise Major Project by marrying modern full-stack web technologies with real aviation business logic. All components, APIs, and cloud databases are fully functional and verified. Thank you very much, Sir. Our team is now glad to answer any questions you may have."
+      </div>
+    </div>
+  </div>
+</body>
+</html>

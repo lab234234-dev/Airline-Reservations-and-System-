@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SkyHigh Air - Member 2 Personal Presentation & Viva Guide</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.6;
+      color: #1e293b;
+      background: #f0fdf4;
+      margin: 0;
+      padding: 30px;
+    }
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 45px 55px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      border-top: 6px solid #16a34a;
+    }
+    .title-banner {
+      text-align: center;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 25px;
+      margin-bottom: 30px;
+    }
+    h1 {
+      color: #14532d;
+      margin-bottom: 8px;
+      font-size: 22pt;
+    }
+    .subtitle {
+      color: #16a34a;
+      font-weight: 600;
+      font-size: 13pt;
+    }
+    h2 {
+      color: #166534;
+      border-left: 5px solid #16a34a;
+      padding-left: 12px;
+      margin-top: 35px;
+      font-size: 15pt;
+    }
+    .dialogue-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 4px solid #16a34a;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 15px 0;
+      font-size: 10.5pt;
+    }
+    .speech-text {
+      background: #ffffff;
+      border: 1px dashed #cbd5e1;
+      padding: 14px;
+      border-radius: 6px;
+      margin-top: 8px;
+      font-style: italic;
+      color: #0f172a;
+    }
+    .code-box {
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 14px;
+      border-radius: 8px;
+      font-family: Consolas, monospace;
+      font-size: 9pt;
+      overflow-x: auto;
+      margin: 10px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+      font-size: 10pt;
+    }
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 10px 12px;
+      text-align: left;
+    }
+    th {
+      background: #f0fdf4;
+      color: #166534;
+      font-weight: bold;
+    }
+    .print-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #16a34a;
+      color: white;
+      border: none;
+      padding: 12px 22px;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(22, 163, 74, 0.4);
+      z-index: 1000;
+    }
+    @media print {
+      body { background: white; padding: 0; }
+      .wrapper { box-shadow: none; padding: 0; max-width: 100%; }
+      .print-btn { display: none; }
+      h2 { page-break-before: always; }
+    }
+  </style>
+</head>
+<body>
+  <button class="print-btn" onclick="window.print()">🖨️ Print / Save PDF</button>
+
+  <div class="wrapper">
+    <div class="title-banner">
+      <h1>MEMBER 2: BACKEND & SECURITY SPECIALIST GUIDE</h1>
+      <div class="subtitle">Complete Presentation Script, Technical Knowledge & Viva Defense</div>
+      <p style="color: #64748b; margin: 4px 0 0;">SkyHigh Air – Major Project (Academic Year 2026 - 2027)</p>
+    </div>
+
+    <h2>📌 1. તારી ભૂમિકા શું છે? (Your Role in this Project)</h2>
+    <p>કોલેજમાં સર પૂછે કે <em>"તમે આ પ્રોજેક્ટમાં શું બનાવ્યું છે?"</em>, ત્યારે તમારે આ મુદ્દાઓ સ્પષ્ટપણે કહેવાના છે:</p>
+    <table>
+      <tr>
+        <th>તમારું મોડ્યુલ</th>
+        <th>મુખ્ય ટેકનોલોજી</th>
+        <th>તમે શું કામ કર્યું છે?</th>
+      </tr>
+      <tr>
+        <td><strong>RESTful API Architecture</strong></td>
+        <td>Node.js & Express.js</td>
+        <td>પોર્ટ 5000 પર ચાલતા API એન્ડપોઇન્ટ્સ બનાવ્યા (Flights, Bookings, Auth, Payments).</td>
+      </tr>
+      <tr>
+        <td><strong>Authentication & Security</strong></td>
+        <td>JWT, bcryptjs (10 rounds)</td>
+        <td>પાસવર્ડ એન્ક્રિપ્શન અને ટોકન આધારિત સુરક્ષિત સેશન મેનેજમેન્ટ.</td>
+      </tr>
+      <tr>
+        <td><strong>Express Rate Limiting</strong></td>
+        <td>express-rate-limit</td>
+        <td>સર્વર પર DoS અને Brute-force હુમલા અટકાવવા માટે રેટ લિમિટર મૂક્યું.</td>
+      </tr>
+      <tr>
+        <td><strong>Seat Concurrency Logic</strong></td>
+        <td>Node.js Business Logic</td>
+        <td>બે વ્યક્તિ એકસાથે એક જ સીટ બુક ન કરી શકે તે માટે 'Held' અને 'Booked' નું લોકિગ લોજિક.</td>
+      </tr>
+      <tr>
+        <td><strong>Multi-Mode Payment Engine</strong></td>
+        <td>Razorpay Sandbox, UPI, Cards</td>
+        <td>ક્રેડિટ/ડેબિટ કાર્ડ, યુપીઆઈ ક્યુઆર અને સ્કાયમાઇલ્સ લોયલ્ટી પોઇન્ટ્સ પેમેન્ટ સિમ્યુલેશન.</td>
+      </tr>
+    </table>
+
+    <h2>🎤 2. ક્લાસરૂમમાં પ્રેઝન્ટેશન વખતે તારે શું બોલવું? (Exact English Speaking Script)</h2>
+    <div class="dialogue-card">
+      <strong>જ્યારે Member 1 તને માઇક / વારો આપે ત્યારે બોલવું:</strong>
+      <div class="speech-text">
+        "Thank you, [Member 1 Name]. Good morning respected Sir.<br><br>
+        My name is [Member 2 Name], and I was responsible for the <strong>Backend Architecture, REST APIs, Security, and Payment Gateway integration</strong> of SkyHigh Air.<br><br>
+        Our backend server runs on Node.js and Express.js on port 5000, communicating seamlessly with MongoDB Atlas. We structured the backend using a clean separation of concerns: Routes, Controllers, Middleware, and Models.<br><br>
+        <strong>1. Security & Authentication:</strong> All passwords undergo salted cryptographic hashing using <code>bcryptjs</code> with 10 rounds before touching the database. For user sessions, we implemented stateless <strong>JSON Web Tokens (JWT)</strong> transmitted via secure HTTP headers. Furthermore, we protected our authentication endpoints using <code>express-rate-limit</code> to thwart automated brute-force attacks.<br><br>
+        <strong>2. Seat Concurrency Handling:</strong> A core challenge in airline systems is avoiding double-booking. When a user selects an available seat, our backend temporarily flags the seat state as 'Held'. Upon final checkout, an atomic database validation verifies that the seat is still unreserved before transitioning it to 'Booked' and issuing a unique 6-character PNR.<br><br>
+        <strong>3. Payment Engine:</strong> We integrated a comprehensive multi-mode payment gateway supporting simulated Credit/Debit cards with live 3D card preview, UPI QR code generation, Net Banking, and our proprietary SkyMiles Rewards, which awards passengers 10% loyalty miles on every transaction.<br><br>
+        I now invite [Member 3 Name] to demonstrate Web Check-in, Boarding Pass QR Generation, and Admin Fleet Analytics. Thank you, Sir."
+      </div>
+    </div>
+
+    <h2>🧠 3. સર તને પૂછી શકે તેવા ટોપ ૫ ટેકનિકલ પ્રશ્નો (Viva Questions & Answers)</h2>
+    
+    <p><strong>Q1: JWT (JSON Web Token) કેવી રીતે કામ કરે છે અને તે ક્યાં સ્ટોર થાય છે?</strong><br>
+    <em>જવાબ:</em> જ્યારે યુઝર લોગિન થાય, ત્યારે સર્વર તેના <code>_id</code> અને <code>role</code> ને સિક્રેટ કી (JWT_SECRET) સાથે સાઇન કરીને 24 કલાક માટે ટોકન બનાવે છે. આ ટોકન ક્લાયન્ટ પાસે સેવ થાય છે અને દરેક પ્રોટેક્ટેડ રિક્વેસ્ટ સાથે <code>Authorization: Bearer &lt;token&gt;</code> હેડરમાં મોકલવામાં આવે છે. સર્વર મિડલવેરમાં <code>jwt.verify()</code> થી તે ચેક કરે છે.</p>
+
+    <p><strong>Q2: પાસવર્ડ સિક્યોરિટી માટે bcryptjs માં 10 Salt Rounds નો શું અર્થ થાય?</strong><br>
+    <em>જવાબ:</em> Salt એ એક રેન્ડમ ડેટા છે જે પાસવર્ડ સાથે મિક્સ થાય છે જેથી Rainbow Table એટેક ન થઈ શકે. 10 રાઉન્ડ્સ એટલે એલ્ગોરિધમ $2^{10} = 1024$ વાર કી સ્ટ્રેચિંગ કરે છે, જેથી પાસવર્ડ ક્રેક કરવો અશક્ય બની જાય છે.</p>
+
+    <p><strong>Q3: RESTful API માં કયા HTTP Methods વાપર્યા છે?</strong><br>
+    <em>જવાબ:</em> 
+    • <code>GET</code>: ફ્લાઇટ્સ અને બુકિંગ્સ મેળવવા માટે.<br>
+    • <code>POST</code>: નવી ટિકિટ બુક કરવા અને લોગિન કરવા માટે.<br>
+    • <code>PUT</code>: વેબ ચેક-ઇન અને પ્રોફાઇલ અપડેટ કરવા માટે.<br>
+    • <code>DELETE</code>: ફ્લાઇટ કેન્સલ કરવા માટે.</p>
+
+    <p><strong>Q4: Express Rate Limiter કેમ મૂક્યો છે?</strong><br>
+    <em>જવાબ:</em> જો કોઈ હેકર વારંવાર ખોટો પાસવર્ડ નાખીને સર્વર હેંગ કરવા કે લોગિન ક્રેક કરવા પ્રયત્ન કરે, તો રેટ લિમિટર એક IP પરથી ૧ મિનિટમાં નિર્ધારિત રિક્વેસ્ટ્સ પછી તેને આપમેળે બ્લોક કરી દે છે (HTTP 429 Too Many Requests).</p>
+
+    <p><strong>Q5: PNR નંબર કેવી રીતે જનરેટ થાય છે?</strong><br>
+    <em>જવાબ:</em> <code>SK-</code> પ્રીફિક્સ સાથે ૪ રેન્ડમ આલ્ફાન્યૂમેરિક અક્ષરો (દા.ત. <code>SK-9812</code>) જનરેટ થાય છે, અને ડેટાબેઝમાં ચેક કરવામાં આવે છે કે તે PNR પહેલાથી કોઈ બીજા પેસેન્જરનો નથી ને!</p>
+  </div>
+</body>
+</html>
