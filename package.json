@@ -1,21 +1,22 @@
 {
   "name": "skyhigh-air-airline-reservation-system",
-  "version": "1.0.0",
-  "description": "SkyHigh Air: Enterprise Airline Reservation & Fleet Management System (MEAN Stack)",
-  "main": "server/server.js",
+  "version": "2.0.0",
+  "description": "SkyHigh Air: Enterprise Airline Reservation & Fleet Management System (React + PHP + MySQL/SQLite)",
+  "main": "php-backend/index.php",
   "scripts": {
-    "start": "node server/server.js",
-    "server": "node server/server.js",
-    "client": "cd angular-client && npm start",
-    "build": "cd angular-client && npm install && npm run build && cd ../server && npm install"
+    "start": "START_PROJECT.bat",
+    "react": "cd react-client && npm run dev",
+    "php": "cd php-backend && C:\\xampp\\php\\php.exe -S 127.0.0.1:8000",
+    "setup:php": "C:\\xampp\\php\\php.exe php-backend/setup.php",
+    "build:react": "cd react-client && npm run build",
+    "pdf": "node scripts/generate_pdfs.js"
   },
   "keywords": [
     "airline-reservation-system",
-    "mean-stack",
-    "angular",
-    "nodejs",
-    "express",
-    "mongodb"
+    "react",
+    "php",
+    "mysql",
+    "sqlite"
   ],
   "author": "SkyHigh Air Team",
   "license": "ISC"

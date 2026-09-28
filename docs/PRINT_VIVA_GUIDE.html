@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8">
+  <title>SkyHigh Air - Viva & Presentation Defense Guide</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm 20mm 20mm 20mm;
+      @bottom-right {
+        content: counter(page);
+      }
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 11pt;
+      line-height: 1.6;
+      color: #1e293b;
+      margin: 0;
+      padding: 20px;
+      background: white;
+    }
+    .page-break {
+      page-break-after: always;
+      break-after: page;
+    }
+    .header-box {
+      background: linear-gradient(135deg, #1e3a8a, #0284c7);
+      color: white;
+      padding: 24px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 6px 0;
+      font-size: 20pt;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 14pt;
+      color: #1e3a8a;
+      border-bottom: 2px solid #38bdf8;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+    h3 {
+      font-size: 12pt;
+      color: #0f172a;
+      margin-top: 18px;
+    }
+    .team-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 10pt;
+      margin-right: 8px;
+    }
+    .badge-sahil { background: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd; }
+    .badge-darshan { background: #fef3c7; color: #d97706; border: 1px solid #fde68a; }
+    .badge-krish { background: #dcfce7; color: #16a34a; border: 1px solid #bbf7d0; }
+    
+    .quote-box {
+      background: #f8fafc;
+      border-left: 4px solid #2563eb;
+      padding: 12px 16px;
+      margin: 12px 0;
+      font-style: italic;
+      color: #334155;
+      border-radius: 0 8px 8px 0;
+    }
+    .guj-note {
+      background: #fdf4ff;
+      border-left: 4px solid #c026d3;
+      padding: 10px 14px;
+      margin: 10px 0 20px 0;
+      font-size: 10pt;
+      border-radius: 0 8px 8px 0;
+    }
+    .qa-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 14px;
+    }
+    .qa-q {
+      font-weight: bold;
+      color: #1e3a8a;
+      font-size: 11pt;
+      margin-bottom: 6px;
+    }
+    .qa-a {
+      color: #334155;
+      font-size: 10.5pt;
+    }
+    ol, ul {
+      margin-top: 4px;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-box">
+    <h1>SKYHIGH AIR: VIVA & PRESENTATION DEFENSE GUIDE</h1>
+    <div style="font-size: 13pt; margin-top: 4px; opacity: 0.95;">
+      કોલેજના સર / એક્સટર્નલ એક્ઝામિનર સામે પ્રોજેક્ટ સમજાવવાની માસ્ટર ગાઇડ
+    </div>
+    <div style="margin-top: 14px; font-size: 10.5pt;">
+      <strong>Team Members:</strong> 1. Sahil (Frontend) | 2. Darshan (Backend API & DB) | 3. Krish (Security & DevOps)
+    </div>
+  </div>
+
+  <h2>1. ઓપનિંગ સ્પીચ (પ્રેઝન્ટેશનની શરૂઆત કેવી રીતે કરવી)</h2>
+  <p><strong>કોણ બોલશે:</strong> <span class="team-badge badge-sahil">SAHIL</span></p>
+  <div class="quote-box">
+    "Respected Sir / Examiners, Good morning/afternoon.<br>
+    Today, our team—myself <strong>Sahil</strong>, along with my team members <strong>Darshan</strong> and <strong>Krish</strong>—presents our Final Year Major Project titled <strong>'SkyHigh Air: Enterprise Online Airline Reservation & Passenger Fleet Management System'</strong>.<br><br>
+    Sir, the primary aim of our project is to modernize commercial airline operations by decoupling the frontend presentation layer from the backend API. We have developed this project using <strong>React 18 with Vite</strong> on the frontend, <strong>PHP 8.2 REST API</strong> on the backend, and <strong>MySQL Database</strong> with enterprise-grade security."
+  </div>
+
+  <h2>2. ટીમ મેમ્બર્સનો વ્યક્તિગત સ્ક્રિપ્ટ (કોણ કયો ભાગ સમજાવશે)</h2>
+
+  <h3>1. સાહિલ (Sahil) — ફ્રન્ટએન્ડ અને UI/UX ડિઝાઇન</h3>
+  <p><span class="team-badge badge-sahil">SPEAKING ROLE: SAHIL</span></p>
+  <div class="quote-box">
+    "Sir, I was responsible for the <strong>Frontend Architecture & UI/UX Engineering</strong> of SkyHigh Air.<br>
+    1. We chose <strong>React 18 with Vite</strong> because traditional airline websites are slow due to full-page reloads. With React’s Single Page Application (SPA) architecture and Virtual DOM, our page navigation is instant (sub-50ms).<br>
+    2. Instead of boring dropdown lists for seat selection, I engineered an <strong>Interactive 3-3 Cabin Layout</strong> modeled after an <strong>Airbus A320neo</strong>. Passengers can visually see Available seats, Booked seats, and their Selected seat in real time.<br>
+    3. Our UI features modern glassmorphism, responsive navigation for mobile and desktop, flight search filters with real-time price sliders, and engaging micro-interactions like confetti animations upon successful booking."
+  </div>
+  <div class="guj-note">
+    <strong>ગુજરાતીમાં યાદ રાખો:</strong> React 18 કેમ વાપર્યું (ફાસ્ટ છે અને રીલોડ થતું નથી), 3-3 એરબસ સીટ મેપ કેવી રીતે કામ કરે છે, અને યુઝર ઇન્ટરફેસ આધુનિક કેવી રીતે બનાવ્યો.
+  </div>
+
+  <div class="page-break"></div>
+
+  <h3>2. દર્શન (Darshan) — બેકએન્ડ API અને ડેટાબેઝ આર્કિટેક્ચર</h3>
+  <p><span class="team-badge badge-darshan">SPEAKING ROLE: DARSHAN</span></p>
+  <div class="quote-box">
+    "Sir, I led the <strong>Backend API & Database Architecture</strong> using <strong>PHP 8.2 and MySQL</strong>.<br>
+    1. Our backend is built as a pure <strong>RESTful API</strong> returning lightweight JSON responses. It follows Object-Oriented MVC principles with dedicated Controllers for Auth, Flights, Bookings, Airport Counter, and Admin Analytics.<br>
+    2. For database persistence, we designed a normalized MySQL relational schema with 5 primary tables: <code>users</code>, <code>flights</code>, <code>bookings</code>, <code>airport_bookings</code>, and <code>payments</code>.<br>
+    3. To ensure 100% immunity against <strong>SQL Injection attacks (CWE-89)</strong>, we exclusively utilized <strong>PHP Data Objects (PDO)</strong> with prepared statements and parameterized queries.<br>
+    4. Furthermore, we built an intelligent <strong>SQLite zero-config fallback</strong>: if MySQL is offline or not installed, the PHP backend automatically falls back to an SQLite database file so the project never crashes."
+  </div>
+  <div class="guj-note">
+    <strong>ગુજરાતીમાં યાદ રાખો:</strong> બેકએન્ડ PHP 8.2 REST API છે, MySQL માં 5 ટેબલ્સ છે, હેકિંગથી બચવા PDO Prepared Statements વાપર્યા છે, અને SQLite ઓટો-ફોલબેક સેટ કર્યું છે.
+  </div>
+
+  <h3>3. ક્રિશ (Krish) — સિક્યુરિટી, બાયોમેટ્રિક ફોટો, ચેક-ઇન અને ડિપ્લોયમેન્ટ</h3>
+  <p><span class="team-badge badge-krish">SPEAKING ROLE: KRISH</span></p>
+  <div class="quote-box">
+    "Sir, my focus was on <strong>Full-Stack Integration, Security, Web Check-in, and DevOps</strong>.<br>
+    1. For authentication, we implemented stateless <strong>JSON Web Tokens (JWT)</strong> signed with <strong>HMAC-SHA256</strong>. All passenger passwords are encrypted using <strong>Bcrypt with cost factor 10</strong>.<br>
+    2. We implemented a novel <strong>Biometric Passenger Headshot Upload Engine</strong>. When a passenger uploads a photo, our frontend uses HTML5 <code>&lt;canvas&gt;</code> to downscale it to 400x400 pixels at 85% JPEG quality. This compresses 5MB images into lightweight 25KB payloads, eliminating server bottlenecks while providing high-resolution headshots for tickets and manifests.<br>
+    3. I built the <strong>Self-Service Web Check-In Module</strong>. By entering their PNR, passengers get checked in, assigned a Gate and Terminal, and receive an <strong>Electronic Boarding Pass with a Scannable dynamic QR Code</strong> and their photo.<br>
+    4. Finally, we prepared the system for production: the frontend is deployed on <strong>Vercel</strong> with global edge CDN, and the backend is deployed on <strong>Render</strong> with Git continuous integration."
+  </div>
+  <div class="guj-note">
+    <strong>ગુજરાતીમાં યાદ રાખો:</strong> JWT અને Bcrypt સિક્યુરિટી, બ્રાઉઝરમાં ઓટો-કોમ્પ્રેસ થતો ફોટો અપલોડ, PNR થી સ્કેનેબલ QR બોર્ડિંગ પાસ જનરેશન, અને Vercel/Render ક્લાઉડ ડિપ્લોયમેન્ટ.
+  </div>
+
+  <div class="page-break"></div>
+
+  <h2>3. લાઈવ પ્રોજેક્ટ ડેમો બતાવવાના ૫ સ્ટેપ્સ (Live Demo Sequence)</h2>
+  <ol>
+    <li>
+      <strong>હોમ પેજ અને ફ્લાઇટ સર્ચ:</strong> <code>http://localhost:5173</code> ખોલો. મુંબઈથી દિલ્હી ફ્લાઇટ્સ સર્ચ કરીને બતાવો.
+    </li>
+    <li>
+      <strong>નવું રજીસ્ટ્રેશન અને ફોટો અપલોડ:</strong> "Sign Up" માં જઈ નામ-ઇમેઇલ લખો. કેમેરા આઇકોન પર ક્લિક કરીને પેસેન્જરનો ફોટો અપલોડ કરો (લાઈવ પ્રિવ્યૂ બતાવો). રજીસ્ટર કરતાં કોન્ફેટી (ફટાકડા) અને ૨૫૦ માઇલ્સ ક્રેડિટ થશે.
+    </li>
+    <li>
+      <strong>એરબસ A320 નો 3-3 સીટ મેપ:</strong> કોઈ ફ્લાઇટમાં "Book Now" દબાવી સીટ મેપ બતાવો. સીટ <code>12A</code> સિલેક્ટ કરી કન્ફર્મ કરો. યુનિક PNR (જેમ કે <code>SH-8K2P</code>) જનરેટ થશે.
+    </li>
+    <li>
+      <strong>વેબ ચેક-ઇન અને QR બોર્ડિંગ પાસ:</strong> નેવબારમાં "Web Check-In" માં જઈ પેલો PNR નાખો. પેસેન્જરનો ફોટો, ગેટ, ટર્મિનલ અને સ્કેનેબલ QR કોડ વાળો બોર્ડિંગ પાસ ઓપન થશે. "Print Pass" દબાવી પ્રિન્ટ પ્રિવ્યૂ બતાવો.
+    </li>
+    <li>
+      <strong>એરપોર્ટ કાઉન્ટર ડેસ્ક અને એડમિન પોર્ટલ:</strong> વોક-ઇન પેસેન્જરો માટે કાઉન્ટર ડેસ્ક બતાવો, અને <code>/admin</code> માં લાઈવ રેવન્યુ તથા રૂટ એનાલિટિક્સ ચાર્ટ બતાવો.
+    </li>
+  </ol>
+
+  <h2>4. એક્ઝામિનર / સર દ્વારા પૂછાતા મુખ્ય પ્રશ્નો અને ઉત્તરો (Top Viva Q&A)</h2>
+
+  <div class="qa-box">
+    <div class="qa-q">Q1. Why React instead of traditional HTML/PHP?</div>
+    <div class="qa-a"><strong>Answer:</strong> "Sir, React uses a Virtual DOM and Single Page Application (SPA) architecture. It eliminates full-page reloading, making flight searches, seat selection, and check-in instantaneous with high UI responsiveness."</div>
+  </div>
+
+  <div class="qa-box">
+    <div class="qa-q">Q2. Why PHP REST API instead of Node.js?</div>
+    <div class="qa-a"><strong>Answer:</strong> "Sir, PHP 8.2 has native JIT (Just-In-Time) compilation and exceptional low-memory footprint. By structuring it as an Object-Oriented REST API using PDO, we get full decoupling and high speed, which easily runs on standard Linux/cPanel and cloud containers."</div>
+  </div>
+
+  <div class="qa-box">
+    <div class="qa-q">Q3. How does JWT (JSON Web Token) authentication work?</div>
+    <div class="qa-a"><strong>Answer:</strong> "Sir, upon login, the server signs a cryptographic token containing the user ID and role using HMAC-SHA256. The client passes this token in the <code>Authorization: Bearer</code> header. Because it is stateless, the server doesn't maintain session memory, ensuring horizontal scalability."</div>
+  </div>
+
+  <div class="qa-box">
+    <div class="qa-q">Q4. How did you implement the 3-3 Airbus Cabin layout?</div>
+    <div class="qa-a"><strong>Answer:</strong> "Sir, we modeled 25 rows with seats A, B, C on the left and D, E, F on the right. In React, each seat maintains state: Available, Booked, or Selected. When booked, seat IDs are saved in the flight's <code>booked_seats</code> JSON array in MySQL, disabling them for subsequent users."</div>
+  </div>
+
+  <div class="qa-box">
+    <div class="qa-q">Q5. How do you prevent two passengers from booking the same seat simultaneously?</div>
+    <div class="qa-a"><strong>Answer:</strong> "Sir, in PHP <code>BookingController</code>, seat reservation executes inside a <strong>Database Transaction</strong> with PDO. Before inserting, it verifies seat availability. If a collision occurs, the transaction rolls back, preventing double booking."</div>
+  </div>
+
+  <div class="qa-box">
+    <div class="qa-q">Q6. How does the passenger photo upload work without overloading server storage?</div>
+    <div class="qa-a"><strong>Answer:</strong> "Sir, we use client-side HTML5 <code>&lt;canvas&gt;</code> downscaling in React. It scales the image to max 400x400 pixels at 85% JPEG quality. This reduces a 5MB image to just ~25KB while maintaining sharp facial clarity for boarding passes."</div>
+  </div>
+
+  <div class="qa-box">
+    <div class="qa-q">Q7. What data is stored in the Boarding Pass QR Code?</div>
+    <div class="qa-a"><strong>Answer:</strong> "Sir, it encodes an IATA-compliant JSON string containing PNR, Flight Number, Passenger Name, Seat Number, Gate, and 'VERIFIED_BOARDING' status, which airport scanners can read instantly."</div>
+  </div>
+
+  <div class="qa-box">
+    <div class="qa-q">Q8. How do you deploy this project to the cloud?</div>
+    <div class="qa-a"><strong>Answer:</strong> "Sir, the React frontend is deployed on <strong>Vercel</strong> with global Edge CDN, and the PHP backend is deployed on <strong>Render</strong> as a web service running <code>php -S 0.0.0.0:$PORT index.php</code> with remote MySQL database integration."</div>
+  </div>
+
+  <div style="text-align: center; margin-top: 40px; font-weight: bold; color: #1e3a8a;">
+    *** BEST OF LUCK TO SAHIL, DARSHAN, AND KRISH! ***
+  </div>
+
+</body>
+</html>

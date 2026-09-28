@@ -1,17 +1,14 @@
 # Node dependencies
 node_modules/
-angular-client/node_modules/
-server/node_modules/
+react-client/node_modules/
+react-client/dist/
 
-# Angular cache & local IDE
-.angular/
-angular-client/.angular/
+# Local IDE
 .vscode/
 .idea/
 
 # Environment Variables & Secrets
 .env
-server/.env
 *.env
 
 # Logs
@@ -23,4 +20,3 @@ yarn-error.log*
 # OS generated files
 .DS_Store
 Thumbs.db
-

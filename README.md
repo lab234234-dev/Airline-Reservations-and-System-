@@ -1,226 +1,209 @@
 # ✈️ SkyHigh Air: Enterprise Airline Reservation & Fleet Management System
 
-[![Node.js](https://img.shields.io/badge/Node.js-v20.x-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org)
-[![Express.js](https://img.shields.io/badge/Express.js-4.18-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com)
-[![Angular](https://img.shields.io/badge/Angular-v18_Standalone-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.dev)
-[![MongoDB Atlas](https://img.shields.io/badge/MongoDB_Atlas-Cloud_Cluster-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/atlas)
-[![Leaflet.js](https://img.shields.io/badge/Leaflet.js-Geospatial_Maps-199900?style=for-the-badge&logo=leaflet&logoColor=white)](https://leafletjs.com)
-[![License](https://img.shields.io/badge/License-Academic_Major_Project-blue?style=for-the-badge)](docs/MAJOR_PROJECT_DOCUMENTATION.html)
+[![React](https://img.shields.io/badge/React-v18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-v5.4-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+[![PHP](https://img.shields.io/badge/PHP-v8.2-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net)
+[![MySQL](https://img.shields.io/badge/MySQL-v8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com)
+[![JWT](https://img.shields.io/badge/JWT-Secure_Auth-black?style=for-the-badge&logo=JSON%20web%20tokens)](https://jwt.io)
+[![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com)
+[![Render](https://img.shields.io/badge/Deploy-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://render.com)
+
+> **🎓 Academic Major Project Submission**  
+> **Course:** Bachelor of Computer Applications / B.Tech / B.E. (Computer Science & Engineering / IT)  
+> **Project Title:** SkyHigh Air — Online Airline Reservation & Passenger Fleet Management System  
 
 ---
 
-## 📌 1. Project Overview
-**SkyHigh Air** is an enterprise-grade commercial airline passenger reservation, web check-in, and fleet intelligence platform engineered to simulate real-world aviation workflows adhering to **IATA** (International Air Transport Association) and **DGCA** standards.
+## 👥 Project Team Members
 
-Built on the modern **MEAN Stack (MongoDB Atlas Cloud, Express.js REST API, Angular 18 Standalone, Node.js)**, the system features dynamic 1-minute live flight scheduling, an interactive 4-state cabin seating matrix, Leaflet.js geodesic route mapping, digital boarding pass generation with scannable QR codes, physical airport counter desk ticketing, and an executive administration dashboard.
-
----
-
-## 👥 Project Team & Group Details (3 Members)
-| Member # | Name | Enrollment / Roll No. | Primary Role |
-| :---: | :--- | :--- | :--- |
-| **01** | **[Student Name 1]** *(Team Lead)* | `[Enrollment No 1]` | Frontend Architecture, Angular 18 UI & Leaflet Map Integration |
-| **02** | **[Student Name 2]** | `[Enrollment No 2]` | Backend REST API, Controllers, JWT Security & Payment Gateway |
-| **03** | **[Student Name 3]** | `[Enrollment No 3]` | MongoDB Atlas Database Design, Check-in, Boarding Pass & Testing |
-
-- **Project Category:** Academic Major Project (B.Tech / B.E. / MCA / MSc IT)
-- **Academic Year:** 2026 – 2027
-- **Institution:** Department of Computer Engineering / Information Technology
+| No. | Member Name | Role & Core Responsibilities |
+|:---:|:---|:---|
+| **1** | **Sahil** | **Frontend Lead & UI/UX Architect** (React 18, Interactive 3-3 Airbus Seat Map, Dynamic Responsive Layouts, Aviation Design System) |
+| **2** | **Darshan** | **Backend Lead & Database Architect** (PHP 8.2 RESTful API, MySQL Relational Database Schema, PDO Transactions, Fleet Scheduling) |
+| **3** | **Krish** | **Full-Stack Integrator & Security/Deployment Lead** (JWT Auth, Passenger Biometric Photo Upload, Web Check-in QR Codes, Vercel & Render Deployment) |
 
 ---
 
-## 🌟 Key Innovative Features
-
-### ✈️ 1. Dynamic 1-Minute Live Flight Scheduling
-- Continuous background generator updating flight status (`Scheduled`, `Boarding`, `In-Air`, `Landed`).
-- Live countdown timers and domestic (Indian States) vs. international route filtering.
-
-### 🗺️ 2. Interactive Leaflet.js Geospatial Route Map
-- Real-time geodesic curved flight trajectories connecting origin and destination airports.
-- OpenStreetMap vector tiles with one-click presets for **Zoom India** and **Zoom Global**.
-
-### 💺 3. Interactive 4-State Cabin Seating Matrix
-- Realistic narrow-body and wide-body airplane fuselage layouts.
-- **Seat States:**
-  - ⬜ **Available:** Open for reservation (turns 🟩 **Selected** on click).
-  - 🟦 **Premium:** Extra legroom seating.
-  - 🟥 **Booked:** Sold seats (strictly locked).
-  - 🟨 **Held:** Concurrency protection holding seats during active checkout.
-
-### 🎫 4. Web Check-in & Dynamic Boarding Pass with QR Code
-- Instant check-in via 6-character PNR.
-- Generates official boarding passes featuring:
-  - **Live Flight Progress Indicator:** Visual aircraft bar tracking active flight journey.
-  - **Client-Side Canvas QR Code:** Scannable payload containing passenger credentials for airport security gate scanners.
-
-### 🏢 5. Physical Airport Counter Desk (`/counter-booking`)
-- Dedicated portal for airline ground ticketing agents to book walk-in passenger tickets on the spot with cash/POS confirmation.
-
-### 💳 6. Multi-Channel Payment Simulation & SkyMiles Rewards
-- Simulated multi-mode checkout: Credit/Debit card with 3D interactive preview, UPI QR code, Net Banking.
-- **SkyMiles Loyalty Program:** Automatically accrues 10% reward miles on every booking, redeemable at checkout.
-
-### 💱 7. Real-Time Multi-Currency Engine
-- Seamlessly converts ticket fares across **INR (₹)**, **USD ($)**, **EUR (€)**, **GBP (£)**, **AED (د.إ)**, and **JPY (¥)**.
-
-### 📊 8. Executive Admin Fleet Intelligence Dashboard (`/admin`)
-- Real-time operational metrics: Gross Revenue, Total Bookings, Seat Load Factor, and Flight CRUD Controls.
+## 📋 Table of Contents
+1. [Project Overview](#-1-project-overview)
+2. [Key System Features](#-2-key-system-features)
+3. [Technology Stack](#-3-technology-stack)
+4. [System Architecture](#-4-system-architecture)
+5. [Database Schema & Data Dictionary](#-5-database-schema--data-dictionary)
+6. [Local Installation & Quick Setup](#-6-local-installation--quick-setup)
+7. [GitHub Repository Setup Guide](#-7-github-repository-setup-guide)
+8. [Cloud Deployment Guide (Vercel & Render)](#-8-cloud-deployment-guide-vercel--render)
+9. [College Documentation & Viva Preparation](#-9-college-documentation--viva-preparation)
 
 ---
 
-## 🛠️ Technology Stack
+## 🌐 1. Project Overview
 
-| Layer | Technology | Details |
-| :--- | :--- | :--- |
-| **Frontend Framework** | Angular 18 (Standalone) | TypeScript 5, RxJS, HTML5 Canvas QR, Glassmorphic CSS3 |
-| **Mapping Engine** | Leaflet.js + OpenStreetMap | Interactive vector mapping with geodesic curved polylines |
-| **Backend Framework** | Node.js (v20.x) + Express.js | RESTful JSON API, MVC Architecture |
-| **Cloud Database** | MongoDB Atlas (v7.0) | Mongoose ODM, Cloud Replica Set, Atomic Transactions |
-| **Security & Auth** | JWT & bcryptjs (10 rounds) | Stateless token verification, Express Rate Limiting, Helmet |
-| **Unified Hosting** | Single Port 5000 | Node server hosts both REST API and compiled Angular SPA |
+**SkyHigh Air** is an enterprise-grade digital aviation platform designed to handle end-to-end commercial airline operations. The system bridges the gap between passengers, counter ground staff, and flight dispatch operations through a unified high-performance architecture.
+
+### Problem Solved:
+Legacy airline reservation platforms often suffer from slow server-side rendering, convoluted seat selection, and poor mobile experiences. SkyHigh Air solves this with:
+- **Instant Client-Side Navigation** using React 18 & Vite.
+- **Interactive Aircraft Cabin Layout** matching Airbus A320 / Boeing 737 aircraft configurations.
+- **Secure REST API Backend** built with lightweight, fast PHP 8.2 and MySQL.
+- **Digital Web Check-in & Biometric Boarding Passes** with scannable dynamic QR codes.
 
 ---
 
-## 📁 Repository Directory Structure
+## 🚀 2. Key System Features
 
-```text
-Airline Reservation system AWD/
-│
-├── angular-client/                    # Frontend Application (Angular 18 Standalone)
-│   ├── dist/angular-client/browser/   # Production Compiled Bundle (HTML, JS, CSS, Assets)
-│   ├── public/assets/images/          # Commercial Aviation Photographic Assets
-│   ├── src/
-│   │   ├── app/
-│   │   │   ├── components/            # Standalone Components (Navbar, Home, Flights, Checkin, etc.)
-│   │   │   ├── guards/                # AuthGuard for Route Protection
-│   │   │   ├── services/              # ApiService, AuthService, CurrencyService
-│   │   │   ├── app.component.ts       # Dynamic Background Switching Logic
-│   │   │   └── app.routes.ts          # Angular Client Routing
-│   │   └── styles.css                 # Midnight Sapphire Theme & Glassmorphism Tokens
-│   ├── angular.json                   # Angular CLI Build Configuration & Budgets
-│   └── package.json                   # Client Dependencies & Build Scripts
-│
-├── server/                            # Backend REST API & SPA Hosting
-│   ├── config/db.js                   # MongoDB Atlas Connection with Auto-Reconnect
-│   ├── controllers/                   # Controllers (auth, flight, booking, payment, admin)
-│   ├── middleware/                    # JWT Auth & Rate Limiter Middleware
-│   ├── models/                        # Mongoose Schemas (User, Flight, Booking, CounterBooking)
-│   ├── routes/                        # Express API Routes
-│   ├── .env                           # Environment Configuration (PORT, MONGO_URI, JWT_SECRET)
-│   ├── seed.js                        # Database Seeder (16 Live Domestic & Intl Flights)
-│   ├── server.js                      # Main Express Entry Point (Hosts API + Angular SPA)
-│   └── package.json                   # Backend Dependencies
-│
-├── docs/                              # Academic Verification & Presentation Dossier
-│   ├── MAJOR_PROJECT_DOCUMENTATION.html   # Complete 23KB Academic Report (Printable PDF)
-│   ├── TEAM_ROLE_DIVISION_AND_PRESENTATION_SCRIPT.html # 12-Min Master Presentation Flow
-│   ├── MEMBER_1_PRESENTATION_GUIDE.html   # Personal Guide for Team Lead (UI, Map & Concurrency)
-│   ├── MEMBER_2_PRESENTATION_GUIDE.html   # Personal Guide for Member 2 (Backend, JWT & Payments)
-│   ├── MEMBER_3_PRESENTATION_GUIDE.html   # Personal Guide for Member 3 (DB, QR Pass & Admin)
-│   ├── PROJECT_STRUCTURE_AND_WORKFLOW.html # File-by-File Technical Workflows Dossier
-│   └── presentation/                  # PowerPoint Presentation Slides (.pptx)
-│
-├── HOW_TO_RUN.md                      # Quick Run & Testing Guide
-└── README.md                          # Project Documentation (This File)
+### 1. Passenger Portal
+- **Flight Discovery Engine:** Multi-criteria search by origin, destination, departure date, and price filter.
+- **Biometric Photo & Profile Management:** Passengers can upload/update high-resolution profile headshots during registration or from their dashboard.
+- **Interactive 3-3 Seat Map:** Visual seat selection with real-time state management (Available, Booked, Selected, Window, Aisle).
+- **Instant Reservation & Payment:** Multi-passenger booking with integrated baggage, meal choices, and welcome loyalty bonus miles.
+- **Self-Service Web Check-In:** 24/7 check-in via PNR code to issue official electronic boarding passes.
+- **Scannable QR Boarding Pass:** Generates printable boarding passes complete with flight data, passenger photo, terminal, gate, and IATA-compliant QR code.
+
+### 2. Airport Counter POS Desk
+- **Walk-in Ticketing:** Dedicated interface for airport ground staff to issue immediate tickets for offline passengers.
+- **Passenger Manifest Lookup:** Search bookings by PNR or passenger name in real time.
+
+### 3. Administrator Operations Portal
+- **Fleet Scheduling CRUD:** Add, update, reschedule, or cancel flights across national routes.
+- **Real-time Business Analytics:** Revenue tracking, flight occupancy KPIs, popular flight corridors, and fleet market share.
+
+---
+
+## 💻 3. Technology Stack
+
+| Layer | Technologies Used |
+|:---|:---|
+| **Frontend UI** | React 18.2, Vite 5.4, React Router DOM v6, Lucide React Icons |
+| **Styling & Assets** | Modern Aviation CSS Design System (Glassmorphism, Dark Accents, HSL Color Tokens) |
+| **Interactive UX** | Canvas-Confetti, QRCode.SVG, HTML5 Canvas Image Optimizer |
+| **Backend API** | PHP 8.2 Object-Oriented REST API, PDO (PHP Data Objects) |
+| **Security** | JWT (JSON Web Tokens) with HMAC-SHA256, Bcrypt Password Hashing |
+| **Database** | MySQL 8.0 / MariaDB (via XAMPP) + SQLite Zero-Config Fallback |
+| **Deployment** | Vercel (Frontend), Render / Railway / Apache (Backend & Database) |
+
+---
+
+## 🏛️ 4. System Architecture
+
+```mermaid
+graph TD
+    Client["React 18 + Vite Frontend Client (Port 5173 / Vercel)"]
+    API["PHP 8.2 REST API (Port 8000 / Render / Apache)"]
+    DB[("MySQL Database / SQLite Fallback")]
+
+    Client -->|"JSON Requests + Bearer JWT"| API
+    API -->|"PDO Prepared Queries"| DB
+    DB -->|"Result Sets / Transaction Status"| API
+    API -->|"JSON Responses & Token Cookies"| Client
 ```
 
 ---
 
-## 🚀 Quick Start Guide (How to Run Locally)
+## 🗄️ 5. Database Schema & Data Dictionary
+
+The relational database `airline_reservation` consists of 5 interconnected tables:
+
+1. **`users`**: Passenger, Agent, and Administrator credentials, reward miles, and `profile_pic` (LONGTEXT).
+2. **`flights`**: Flight schedules, origin/destination hubs, departure/arrival timestamps, pricing, and booked seat matrices.
+3. **`bookings`**: Confirmed flight reservations, PNR tracking codes, passenger lists (JSON), seat allocations, and boarding status.
+4. **`airport_bookings`**: POS tickets issued at airport counter desks for offline walk-in travelers.
+5. **`payments`**: Payment transaction logs, simulated gateways, and verification timestamps.
+
+---
+
+## ⚙️ 6. Local Installation & Quick Setup
 
 ### Prerequisites
-- Node.js (v18.x or v20.x LTS)
-- NPM (v10.x)
-- Active Internet Connection (for MongoDB Atlas Cloud Database and Leaflet Map tiles)
+- [Node.js](https://nodejs.org/) (v18 or v20+)
+- [XAMPP](https://www.apachefriends.org/) (with Apache & MySQL) **OR** Standalone PHP 8.2+
 
-### 1. Unified Production Run (Recommended - Single Command)
-Runs the entire full-stack application (both Frontend + Backend API) on a single port:
+### 1-Click Launch (Recommended for Windows)
+Simply double-click the **`START_PROJECT.bat`** file in the root directory. It will:
+1. Verify PHP and Node environments.
+2. Initialize database tables and seed sample flights.
+3. Start the PHP REST API on `http://127.0.0.1:8000`.
+4. Launch the React frontend on `http://localhost:5173`.
+
+### Manual CLI Setup:
 ```bash
-cd "server"
-node server.js
+# 1. Install frontend dependencies
+cd react-client
+npm install
+cd ..
+
+# 2. Setup Database in MySQL
+npm run setup:php
+
+# 3. Start PHP Backend Server (Terminal 1)
+npm run php
+
+# 4. Start React Frontend Dev Server (Terminal 2)
+npm run react
 ```
-👉 Open your browser at: **`http://localhost:5000`**
 
 ---
 
-### 2. Development Mode (Live Hot-Reload)
-If you want to edit Angular files with instant live reloading:
+## 🐙 7. GitHub Repository Setup Guide
 
-**Terminal 1 (Backend API):**
+To push this project to your GitHub account:
+
 ```bash
-cd "server"
-node server.js
+# 1. Initialize git in the root folder
+git init
+
+# 2. Add all files
+git add .
+
+# 3. Create initial commit
+git commit -m "Initial Release: SkyHigh Air Airline Reservation System"
+
+# 4. Rename main branch
+git branch -M main
+
+# 5. Link your GitHub remote repository (replace with your repo URL)
+git remote add origin https://github.com/YOUR_USERNAME/airline-reservation-system.git
+
+# 6. Push code to GitHub
+git push -u origin main
 ```
-*(Backend active on `http://localhost:5000/api`)*
-
-**Terminal 2 (Angular Dev Client):**
-```bash
-cd "angular-client"
-npm start
-```
-👉 Open your browser at: **`http://localhost:4200`**
 
 ---
 
-## 🔑 Demo & Testing Credentials
+## ☁️ 8. Cloud Deployment Guide (Vercel & Render)
 
-| Role | Email | Password | Access Level |
-| :--- | :--- | :--- | :--- |
-| **System Admin** | `admin@skyhigh.com` | `admin123` | Full Access: Fleet CRUD, Analytics, Revenue Reports |
-| **Passenger User** | `test@example.com` | `password123` | Flight Search, Seat Booking, Check-in, Boarding Pass |
-| **New User** | *Register on `/register`* | *Custom* | Instant account creation with 250 welcome SkyMiles |
+### A. Deploy Frontend on Vercel
+1. Sign in to [Vercel](https://vercel.com) and click **"Add New Project"**.
+2. Import your GitHub repository.
+3. In **Root Directory**, select `react-client`.
+4. In **Build Command**, enter: `npm run build`.
+5. In **Output Directory**, enter: `dist`.
+6. Click **Deploy**. Your frontend is now live globally with free SSL!
 
----
-
-## 🌐 API Reference (REST Endpoints)
-
-| Method | Endpoint | Description | Access |
-| :--- | :--- | :--- | :--- |
-| `GET` | `/api/health` | Health Check (Server & DB Status) | Public |
-| `GET` | `/api/flights` | Retrieve all active domestic & intl flights | Public |
-| `GET` | `/api/flights/:id` | Fetch flight details and 4-state seat matrix | Public |
-| `POST` | `/api/auth/register` | Register new passenger account | Public |
-| `POST` | `/api/auth/login` | Authenticate user & issue JWT token | Public |
-| `GET` | `/api/auth/me` | Fetch authenticated user profile & SkyMiles | Authenticated |
-| `POST` | `/api/bookings` | Book ticket, hold seats, and issue PNR | Authenticated |
-| `GET` | `/api/bookings/my-bookings` | Retrieve user's booking history | Authenticated |
-| `POST` | `/api/bookings/checkin-pnr` | Web check-in and issue QR boarding pass | Public |
-| `POST` | `/api/airport/book-counter-ticket` | Walk-in counter ticket issuance | Ground Staff |
-| `GET` | `/api/admin/stats` | Executive fleet analytics & revenue data | Admin Only |
+### B. Deploy Backend on Render
+1. Sign in to [Render](https://render.com) and click **"New +"** -> **Web Service**.
+2. Connect your GitHub repository.
+3. Set **Root Directory** to `php-backend`.
+4. Set **Environment** to `PHP`.
+5. Set **Build Command** to empty (or `composer install` if using packages).
+6. Set **Start Command** to: `php -S 0.0.0.0:$PORT index.php`.
+7. Click **Create Web Service**.
+8. Once deployed, copy your Render API URL and update `react-client/src/services/api.js` (or use Vercel environment variables).
 
 ---
 
-## ☁️ Cloud Deployment Guide (Render / Railway)
+## 📚 9. College Documentation & Viva Preparation
 
-Because the project is architected with **Unified Static Hosting**, it is 100% cloud-ready:
-1. Connect your repository to **Render.com** or **Railway.app**.
-2. **Build Command:**
-   ```bash
-   cd angular-client && npm install && npm run build && cd ../server && npm install
-   ```
-3. **Start Command:**
-   ```bash
-   cd server && node server.js
-   ```
-4. **Environment Variables:**
-   - `PORT`: `5000`
-   - `NODE_ENV`: `production`
-   - `MONGO_URI`: `mongodb+srv://AWD:AWD234234@cluster0.brveu1r.mongodb.net/airline-reservation?appName=Cluster0`
-   - `JWT_SECRET`: `your_super_secure_jwt_secret_key_change_this_in_production_12345`
+Comprehensive documentation prepared for university submission:
+
+- 📄 **Full 60-Page Academic Report:** [`docs/MAJOR_PROJECT_REPORT_60_PAGES.md`](file:///c:/Air/Airline%20Reservation%20System/docs/MAJOR_PROJECT_REPORT_60_PAGES.md)  
+  *(Includes Certificates, Acknowledgements, SRS, DFD Levels 0-2, UML Class/Sequence/Use-Case Diagrams, ER Diagrams, 20+ Test Cases, Source Code listings, and References)*.
+- 🖨️ **Printable PDF Generator (1-Click Print):** [`docs/PRINT_PROJECT_REPORT.html`](file:///c:/Air/Airline%20Reservation%20System/docs/PRINT_PROJECT_REPORT.html)  
+  *(Open this HTML file in Google Chrome or Microsoft Edge and press `Ctrl + P` to save as a 60-page PDF ready for hard binding).*
+- 🎤 **Project Presentation & Viva Explanation Guide:** [`docs/PROJECT_VIVA_EXPLANATION_GUIDE.md`](file:///c:/Air/Airline%20Reservation%20System/docs/PROJECT_VIVA_EXPLANATION_GUIDE.md)  
+  *(Contains exact speaking roles for Sahil, Darshan, and Krish, live demo script, and 25+ viva questions with answers).*
 
 ---
 
-## 📄 Academic Project Verification Dossier
-Detailed academic documentation, SRS specifications, DFD diagrams, and viva voce preparation files are located in the `docs/` folder:
-- 📖 [Major Project Documentation Report](docs/MAJOR_PROJECT_DOCUMENTATION.html)
-- 👥 [Team Role Division & Master Presentation Script](docs/TEAM_ROLE_DIVISION_AND_PRESENTATION_SCRIPT.html)
-- 👑 [Member 1 (Team Lead) Presentation Guide](docs/MEMBER_1_PRESENTATION_GUIDE.html)
-- ⚙️ [Member 2 (Backend & Security) Presentation Guide](docs/MEMBER_2_PRESENTATION_GUIDE.html)
-- 🗄️ [Member 3 (Database & Check-in) Presentation Guide](docs/MEMBER_3_PRESENTATION_GUIDE.html)
-- 📂 [Project Structure & Technical Workflows Dossier](docs/PROJECT_STRUCTURE_AND_WORKFLOW.html)
-
----
-
-## 📜 License & Copyright
-Developed as an Academic Major Project for the Academic Year 2026–2027.  
-© 2026 SkyHigh Air Engineering Team. All rights reserved.
+### 🛡️ License & Copyright
+Developed for academic assessment by **Sahil, Darshan, and Krish**. Open-source under the MIT License.
